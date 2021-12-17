@@ -33,3 +33,14 @@ const itsOk = "\"it's ok.\"";
 myHeader.textContent = `he said, ${itsOk}`;
 
 myDiv.appendChild(myHeader);
+
+const button = document.createElement('button');
+button.textContent = "click me!";
+myDiv.appendChild(button);
+
+let greet = function(){
+    const name = prompt('tell me your name child.');
+    alert(`the transaction is done ${name}`);
+}
+
+button.addEventListener('click', greet);
