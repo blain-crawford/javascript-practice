@@ -28,7 +28,8 @@ let myMod = 475 /Math.floor((67 % 17))
 const max = 57;
 const actual = max - 13;
 const percentage = actual / max;
+const itsOk = "\"it's ok.\"";
 
-myHeader.textContent = "he said, \"it\'s ok.\"";
+myHeader.textContent = `he said, ${itsOk}`;
 
 myDiv.appendChild(myHeader);
