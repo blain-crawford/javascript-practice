@@ -15,11 +15,9 @@
 // 15 Take a few minutes to keep playing around with various things in your script tag. Eventually, we will learn how to actually make those numbers and things show up on the webpage, but all of this logic will remain the same, so make sure you’re comfortable with it before moving on.
 // 16 * As you might have noticed by running Javascript code in the console, the console prints the result of the code it executes (called a return statement). You will learn more about these in the next lessons, however for now it is good to remember that an assignment (such as b = 7 * a) returns undefined and so you cannot assign a value to a variable and read its value in the same line.`
 
-
-
-let myDiv = document.getElementById('test');
-let myHeader = document.createElement('h1');
-let myMod = 475 /Math.floor((67 % 17))
+let myDiv = document.getElementById("test");
+let myHeader = document.createElement("h1");
+let myMod = 475 / Math.floor(67 % 17);
 
 // myHeader.textContent = Math.floor(myMod);
 
@@ -28,19 +26,34 @@ let myMod = 475 /Math.floor((67 % 17))
 const max = 57;
 const actual = max - 13;
 const percentage = actual / max;
-const itsOk = "\"it's ok.\"";
+const itsOk = '"it\'s ok."';
 
 myHeader.textContent = `he said, ${itsOk}`;
 
 myDiv.appendChild(myHeader);
 
-const button = document.createElement('button');
+const button = document.createElement("button");
 button.textContent = "click me!";
 myDiv.appendChild(button);
 
-let greet = function(){
-    const name = prompt('tell me your name child.');
-    alert(`the transaction is done ${name}`);
-}
+let greet = function () {
+  const name = prompt("tell me your name child.");
+  alert(`the transaction is done ${name}`);
+};
 
-button.addEventListener('click', greet);
+button.addEventListener("click", greet);
+
+const myString = 123;
+const myNum = toString(myString);
+console.log(typeof myNum);
+
+let askAge = function(){
+    let age = prompt('Hello!  What is your age?');
+     (age < 18) ? answer = 'you are yet young!': (age > 18 && age < 21) ? answer = 'Care for a smoke?': (age > 21) ? answer = 'Fancy a drink?': 'you must be a fool';
+    alert(answer);
+};
+
+askAge();
+
+
+
