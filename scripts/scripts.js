@@ -29,6 +29,6 @@ const max = 57;
 const actual = max - 13;
 const percentage = actual / max;
 
-myHeader.textContent = '123';
+myHeader.textContent = "he said, \"it\'s ok.\"";
 
 myDiv.appendChild(myHeader);
