@@ -212,12 +212,23 @@ let myMod = 475 / Math.floor(67 % 17);
 * e = the sum of the previous four variables
 */
 
-const a = 1 + 8;
-const b = 22 * 3;
-const c = Math.floor(5 / 4);
-const d = a - 17;
-const e = a + b + c + d;
+// const a = 1 + 8;
+// const b = 22 * 3;
+// const c = Math.floor(5 / 4);
+// const d = a - 17;
+// const e = a + b + c + d;
 
-// module.exports = {a, b, c, d, e}
+// // module.exports = {a, b, c, d, e}
  
-console.log(a, b, c ,d ,e);
+// console.log(a, b, c ,d ,e);
+
+let areGams =function(){
+  let theQuestion = prompt('Are you the gams?')
+  if(theQuestion === 'yes'){
+    alert('Nice to meet you!')
+  } else {
+    alert('be gone!')
+  }
+}
+
+areGams();
