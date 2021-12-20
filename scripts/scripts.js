@@ -199,18 +199,16 @@ let myMod = 475 / Math.floor(67 % 17);
 // ll.removeAt(4);
 // ll.printListData();
 
-
-
 /* Some rules first:
-*   Enter the operations, replacing the `"?"`, make the computer do the work for you. 
-*   Do not manually enter the answer, for example: "one plus ten" would look like 1+10
-* 
-* a = one plus eight
-* b = 22 times three
-* c = the *remainder* of 5/4
-* d = the variable 'a' minus 17
-* e = the sum of the previous four variables
-*/
+ *   Enter the operations, replacing the `"?"`, make the computer do the work for you.
+ *   Do not manually enter the answer, for example: "one plus ten" would look like 1+10
+ *
+ * a = one plus eight
+ * b = 22 times three
+ * c = the *remainder* of 5/4
+ * d = the variable 'a' minus 17
+ * e = the sum of the previous four variables
+ */
 
 // const a = 1 + 8;
 // const b = 22 * 3;
@@ -219,7 +217,7 @@ let myMod = 475 / Math.floor(67 % 17);
 // const e = a + b + c + d;
 
 // // module.exports = {a, b, c, d, e}
- 
+
 // console.log(a, b, c ,d ,e);
 
 // let areGams =function(){
@@ -233,42 +231,64 @@ let myMod = 475 / Math.floor(67 % 17);
 
 // areGams();
 
-let randomNum = function(){
-  let playerShoot =  prompt('Rock, Paper, Scissors?')
+// let randomNum = function(){
+//   let playerShoot =  prompt('Rock, Paper, Scissors?')
 
-  let myShoot = Math.floor(Math.random() * 3);
-  if(myShoot === 0){
-    myShoot = 'rock'
-  } else if(myShoot === 1){
-    myShoot = 'paper'
-  } else if(myShoot === 2){
-    myShoot = 'scissors'
+//   let myShoot = Math.floor(Math.random() * 3);
+//   if(myShoot === 0){
+//     myShoot = 'rock'
+//   } else if(myShoot === 1){
+//     myShoot = 'paper'
+//   } else if(myShoot === 2){
+//     myShoot = 'scissors'
+//   }
+
+//   console.log(myShoot);
+//   console.log(playerShoot);
+
+//   if(playerShoot.toLowerCase() === 'rock' && myShoot === 'scissors'){
+//     console.log('You Win Human!')
+//   } else if(playerShoot.toLowerCase() === 'scissors' && myShoot === 'paper'){
+//     console.log('You Win Human!')
+//   } else if(playerShoot.toLowerCase() === 'paper' && myShoot === 'rock'){
+//     console.log('You Win Human!')
+//   } else if(playerShoot.toLowerCase() === 'rock' && myShoot === 'rock'){
+//     console.log('Tie Round Human!')
+//   } else if(playerShoot.toLowerCase() === 'paper' && myShoot === 'paper'){
+//     console.log('Tie Round Human!')
+//   } else if(playerShoot.toLowerCase() === 'scissors' && myShoot === 'scissors'){
+//     console.log('Tie Round Human!')
+//   } else if(playerShoot.toLowerCase() === 'rock' && myShoot === 'paper'){
+//     console.log('You lose Human!')
+//   } else if(playerShoot.toLowerCase() === 'paper' && myShoot === 'scissors'){
+//     console.log('You lose Human!')
+//   } else if(playerShoot.toLowerCase() === 'scissors' && myShoot === 'rock'){
+//     console.log('You! lose Human!')
+//   }
+
+// };
+
+// randomNum();
+
+let fizzBuzz = function (num) {
+  //for loop and increment up to num input
+  for (let i = 0; i <= num; i++) {
+    //if modulo 3 = zero console.log fizz
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("fizzbuzz", i);
+      continue;
+    } else if (i % 5 === 0) {
+      console.log("buzz", i);
+      continue;
+    } else if (i % 3 === 0) {
+      console.log("fizz", i);
+      continue;
+    }
+    console.log(i);
+    //if modulo 5 is 0 console log buzz
+    //if modulo both console log fizzbuzz
+    //else console log i
   }
-
-
-  console.log(myShoot);
-  console.log(playerShoot);
-
-  if(playerShoot.toLowerCase() === 'rock' && myShoot === 'scissors'){
-    console.log('You Win Human!')
-  } else if(playerShoot.toLowerCase() === 'scissors' && myShoot === 'paper'){
-    console.log('You Win Human!')
-  } else if(playerShoot.toLowerCase() === 'paper' && myShoot === 'rock'){
-    console.log('You Win Human!')
-  } else if(playerShoot.toLowerCase() === 'rock' && myShoot === 'rock'){
-    console.log('Tie Round Human!')
-  } else if(playerShoot.toLowerCase() === 'paper' && myShoot === 'paper'){
-    console.log('Tie Round Human!')
-  } else if(playerShoot.toLowerCase() === 'scissors' && myShoot === 'scissors'){
-    console.log('Tie Round Human!')
-  } else if(playerShoot.toLowerCase() === 'rock' && myShoot === 'paper'){
-    console.log('You lose Human!')
-  } else if(playerShoot.toLowerCase() === 'paper' && myShoot === 'scissors'){
-    console.log('You lose Human!')
-  } else if(playerShoot.toLowerCase() === 'scissors' && myShoot === 'rock'){
-    console.log('You! lose Human!')
-  }
-
 };
 
-randomNum();
+fizzBuzz(70);
