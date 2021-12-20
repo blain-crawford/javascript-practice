@@ -222,13 +222,53 @@ let myMod = 475 / Math.floor(67 % 17);
  
 // console.log(a, b, c ,d ,e);
 
-let areGams =function(){
-  let theQuestion = prompt('Are you the gams?')
-  if(theQuestion === 'yes'){
-    alert('Nice to meet you!')
-  } else {
-    alert('be gone!')
-  }
-}
+// let areGams =function(){
+//   let theQuestion = prompt('Are you the gams?')
+//   if(theQuestion === 'yes'){
+//     alert('Nice to meet you!')
+//   } else {
+//     alert('be gone!')
+//   }
+// }
 
-areGams();
+// areGams();
+
+let randomNum = function(){
+  let playerShoot =  prompt('Rock, Paper, Scissors?')
+
+  let myShoot = Math.floor(Math.random() * 3);
+  if(myShoot === 0){
+    myShoot = 'rock'
+  } else if(myShoot === 1){
+    myShoot = 'paper'
+  } else if(myShoot === 2){
+    myShoot = 'scissors'
+  }
+
+
+  console.log(myShoot);
+  console.log(playerShoot);
+
+  if(playerShoot.toLowerCase() === 'rock' && myShoot === 'scissors'){
+    console.log('You Win Human!')
+  } else if(playerShoot.toLowerCase() === 'scissors' && myShoot === 'paper'){
+    console.log('You Win Human!')
+  } else if(playerShoot.toLowerCase() === 'paper' && myShoot === 'rock'){
+    console.log('You Win Human!')
+  } else if(playerShoot.toLowerCase() === 'rock' && myShoot === 'rock'){
+    console.log('Tie Round Human!')
+  } else if(playerShoot.toLowerCase() === 'paper' && myShoot === 'paper'){
+    console.log('Tie Round Human!')
+  } else if(playerShoot.toLowerCase() === 'scissors' && myShoot === 'scissors'){
+    console.log('Tie Round Human!')
+  } else if(playerShoot.toLowerCase() === 'rock' && myShoot === 'paper'){
+    console.log('You lose Human!')
+  } else if(playerShoot.toLowerCase() === 'paper' && myShoot === 'scissors'){
+    console.log('You lose Human!')
+  } else if(playerShoot.toLowerCase() === 'scissors' && myShoot === 'rock'){
+    console.log('You! lose Human!')
+  }
+
+};
+
+randomNum();
