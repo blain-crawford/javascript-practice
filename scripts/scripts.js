@@ -56,4 +56,26 @@ let myMod = 475 / Math.floor(67 % 17);
 // askAge();
 
 
+const n1 = {
+  data: 100
+}
 
+const n2 = {
+  data: 200
+}
+
+n1.next = n2;
+
+
+
+class Node {
+  constructor(data, next = null) {
+    this.data = data;
+    this.next = next;
+  }
+}
+
+const n3 = new Node(300);
+n1.next = n3
+
+console.log(n1);
