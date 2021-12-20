@@ -23,37 +23,37 @@ let myMod = 475 / Math.floor(67 % 17);
 
 // myDiv.appendChild(myHeader);
 
-const max = 57;
-const actual = max - 13;
-const percentage = actual / max;
-const itsOk = '"it\'s ok."';
+// const max = 57;
+// const actual = max - 13;
+// const percentage = actual / max;
+// const itsOk = '"it\'s ok."';
 
-myHeader.textContent = `he said, ${itsOk}`;
+// myHeader.textContent = `he said, ${itsOk}`;
 
-myDiv.appendChild(myHeader);
+// myDiv.appendChild(myHeader);
 
-const button = document.createElement("button");
-button.textContent = "click me!";
-myDiv.appendChild(button);
+// const button = document.createElement("button");
+// button.textContent = "click me!";
+// myDiv.appendChild(button);
 
-let greet = function () {
-  const name = prompt("tell me your name child.");
-  alert(`the transaction is done ${name}`);
-};
+// let greet = function () {
+//   const name = prompt("tell me your name child.");
+//   alert(`the transaction is done ${name}`);
+// };
 
-button.addEventListener("click", greet);
+// button.addEventListener("click", greet);
 
-const myString = 123;
-const myNum = toString(myString);
-console.log(typeof myNum);
+// const myString = 123;
+// const myNum = toString(myString);
+// console.log(typeof myNum);
 
-let askAge = function(){
-    let age = prompt('Hello!  What is your age?');
-     (age < 18) ? answer = 'you are yet young!': (age > 18 && age < 21) ? answer = 'Care for a smoke?': (age > 21) ? answer = 'Fancy a drink?': 'you must be a fool';
-    alert(answer);
-};
+// let askAge = function(){
+//     let age = prompt('Hello!  What is your age?');
+//      (age < 18) ? answer = 'you are yet young!': (age > 18 && age < 21) ? answer = 'Care for a smoke?': (age > 21) ? answer = 'Fancy a drink?': 'you must be a fool';
+//     alert(answer);
+// };
 
-askAge();
+// askAge();
 
 
 
